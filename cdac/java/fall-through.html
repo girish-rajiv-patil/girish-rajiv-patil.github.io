@@ -1,0 +1,93 @@
+<html>
+  <head>
+	  <title>Fall Through</title>
+	  <link rel = "stylesheet" href = "../../css/style.css" media = "all" type = "text/css" />
+	  <link rel = "stylesheet" href = "../../css/section.css" media = "all" type = "text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/gopi.png">
+  </head>
+
+  <body>
+	  <header id = "head">
+      <nav>
+        <ul id="nav-list">
+          <li class="nav-list-item"><a class="nav-list-anchor" href="../../index.html">Home</a></li>
+          <li class="nav-list-item"><a class="nav-list-anchor" href="../index.html">Blog</a></li>
+          <li class="nav-list-item"><a class="nav-list-anchor" href="../../projects/index.html">Projects</a></li>
+          <li class="nav-list-item"><a class="nav-list-anchor" href="../../gethelp/index.html">Get Help</a></li>
+          <li class="nav-list-item"><a class="nav-list-anchor" href="../../contactme/index.html">Contact Me</a></li>
+        </ul>
+      </nav>
+		  <section>
+				  <div id="myname"><span id="name-span"><a href="../../index.html">Gopinath Langote</a></span></div>
+		  </section>
+	  </header>
+
+	  <section id = "blog-post">
+		  <article>
+		    <h1>
+          Fall Through
+		    </h1>
+		    <p class="meta">
+			    <time datetime="2015-03-28" pubdate="">Mar 28, 2015</time>
+		    </p>
+		    <hr />
+			  <section>
+		      <p>
+            <p>
+            <h3>Variable</h3>
+              A "fall through" is what we call it when a case in a switch statement does not end in a break, return, throw, or any other control-breaking statement. In these cases, program execution continues to the next case block (regardless of the value in the switch), and so control "falls through" to the case below it.
+              <div class='highlight'>Fall through correspondce to Switch Case in programming language.</div>
+              
+              <br>
+              
+            </p>
+            <p>
+              <h3>Entry Point</h3>
+              If for switch expression exact match found then that case will be entry point for switch. if not match found then default statement is entry point.
+
+              <div class='highlight'>
+              
+               <div align="left">
+				    public static void main(String[] args) {</br>
+				        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int n=1;</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch(n) {</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case 0:</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("ZERO");            </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case 1:</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("ONE");</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case 2:</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("TWO");</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</br>
+				}</br>
+              </div> 
+              </div>
+            <p>
+            	Notice the break statements in cases 0 and 2. These are used to break out of the switch block so that only one value is printed out. If n is set to 1 before executing this code, “one” would be printed out and then the program would continue to the next statement and print out “two” as well. That is a fall through.
+            </p>  
+            
+			  </section>
+		  </article>
+	  </section>
+
+    <footer>
+      <div id = "copyRight">
+        &copy; 2015 gopinath-langote.github.io
+      </div>
+      <div>
+        follow me@
+        <hr />
+        <div class = "social-group">
+          <div class = "social-plugs" id = "gh">
+            <a href = "https://github.com/gopinath-langote">GitHub</a>
+          </div>
+          <div class = "social-plugs" id = "li">
+            <a href = "https://www.linkedin.com/in/gopinathlangote">LinkedIn</a>
+        </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

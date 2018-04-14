@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <title>
+    Girish Patil
+    </title>
+    <meta name="description" content="This is blog by Girish Patil. It's about the things those I'm learning in my Computer Engineering life.">
+    <meta name="keywords" content="Girish Patil, WCE, SVERIs, WLUG, Linux, Web Development, Ruby, Rails, HTML, Hadoop, Big Data, IoT, Engineering, Sushant">
+    <meta name="author" content="Girish Patil">
+    <link rel = "stylesheet" href = "css/style.css" media = "all" type = "text/css" />
+    <link rel = "stylesheet" href = "css/section.css" media = "all" type = "text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
+    
+    
+  </head>
+  <body>
+    <header id = "head">
+      <nav>
+        <ul id="nav-list">
+          <li class="nav-list-item"><a class="nav-list-anchor" href="../index.html">Home</a></li>
+          <li class="nav-list-item"><a class="nav-list-anchor" href="index.html">C-DAC</a></li>
+		  <li class="nav-list-item"><a class="nav-list-anchor" href="../interview/index.html">Interview Q</a></li>
+          <li class="nav-list-item"><a class="nav-list-anchor" href="projects/index.html">Projects</a></li>
+          <li class="nav-list-item"><a class="nav-list-anchor" href="contactme/index.html">Contact Me</a></li>
+        </ul>
+      </nav>
+      <section>
+        <div id="myname">
+          <span id="name-span">
+            <a href="index.html">Girish Patil</a>
+           </span>
+        </div>
+      </section>
+    </header>
+
+    <section>				
+      <div class="section-div" id="section-1">
+        <div class="title">
+          <span>Operating System Concept</span>
+          <hr />
+        </div>
+        <div id="selfie">	<img class="mySlides" src="img/banner1.jpg" /></div>
+        <div id="selfie"> <img class="mySlides" src="img/banner2.jpg" /></div>
+        <div id="selfie"> <img class="mySlides" src="img/banner1.jpg" /></div>
+        <div id="selfie"> <img class="mySlides" src="img/banner2.jpg" /></div>
+        <div id="selfie"> <img class="mySlides" src="img/banner1.jpg" /></div>
+        <div id="selfie"> <img class="mySlides" src="img/banner2.jpg" /></div>
+        <div class="w3-center" style="text-align: center;">
+        <div class="w3-section" style="text-align: center;">
+          <button class="w3-button w3-light-grey" onclick="plusDivs(-1)" style="width: 70px; height: 25px;background-color: #bfbbb7">Prev</button>
+          <button class="w3-button w3-light-grey" onclick="plusDivs(1)" style="width: 70px; height: 25px;background-color: #bfbbb7">Next</button>
+        </div>
+        <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+        <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+        <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+        <button class="w3-button demo" onclick="currentDiv(3)">...</button> 
+        <button class="w3-button demo" onclick="currentDiv(3)">40</button> 
+      </div>
+      <br>
+      <br>
+
+      </div>
+	
+      
+    </section>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+    <footer>
+      <div id = "copyRight">
+        &copy; 2017 girish-rajiv-patil.github.io
+      </div>
+      <div>
+        follow me@
+        <hr />
+        <div class = "social-group">
+          
+        <div class = "social-plugs" id = "gh">
+            <a href = "https://github.com/girish-rajiv-patil">GitHub</a>
+          </div>
+          <div class = "social-plugs" id = "li">
+            <a href = "https://www.linkedin.com/in/girish-rajiv-patil/">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

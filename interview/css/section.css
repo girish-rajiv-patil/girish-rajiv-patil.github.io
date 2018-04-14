@@ -1,0 +1,147 @@
+#blog-posts {
+  margin:0px auto;
+  padding:0px 0px;
+  height:auto;
+  width:100%;
+  margin:0px auto;
+  font-size:22px;
+  color: #2F3F4E;
+  line-height:1.56em;
+}
+
+#blog-posts ul li {
+  width:65%;
+  margin:20px auto;
+  list-style:none;
+  display:block;
+}
+
+#blog-posts ul li a {
+  text-decoration:none;
+  color: #EF4723;
+  font-size: 30px;
+  /*
+  color: #EF4723;
+  color:#df4244; Red
+  color:#4EB980; Green
+  */
+}
+
+#blog-posts ul li a:hover {
+  text-decoration:none;
+  color:#df4244;
+
+  /*
+  color:#df4244; Red
+  color:#4EB980; Green
+  */
+}
+
+#blog-posts ul hr {
+  width:75%;
+  height:10px;
+  border:1px solid #dcdcdc;
+  border-radius:20px;
+  background:#dcdcdc;
+  opacity: 0.8;
+}
+
+.meta {
+  margin:0px auto;
+  padding:0px auto;
+  color:#666;
+}
+
+#blog-posts .read-more {
+  height:auto;
+  width:130px;
+  margin:0px 0px;
+  padding:12px 12px;
+  border:1px solid #dcdcdc;
+  text-align:center;
+  color:#666;
+  font-size: 22px;
+}
+
+#blog-posts .read-more a {
+  color:#666;
+  font-size: 22px;
+}
+
+
+#blog-post {
+  margin:0px auto;
+  height:auto;
+  width:100%;
+  text-align:center;
+  line-height:1.56em;
+}
+
+#blog-post article {
+  height:auto;
+  width:65%;
+  margin:0px auto;
+  color: #323E48;
+}
+
+#blog-post article h1 {
+  font-size:35px;
+  color:#b5190e;
+  margin-bottom:5px;
+  padding:0px 0px;
+}
+
+#blog-post article hr {
+  background:#cdcdcd;
+  height:1px;
+  border:1px solid #cdcdcd;
+  border-radius:30px 30px;
+}
+
+#blog-post article section {
+  text-align:left;
+}
+
+#blog-post article p {
+  font-size:23px;
+}
+
+
+code  {
+  color: #D14;
+  background: #F5F5F5;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 0.5px solid #dcdcdc;
+  padding: 0px 5px;
+}
+
+
+.codebase  {
+  color:          #D14;
+  background:     #F5F5F5;
+  font-size:      18px;
+  border-radius:  5px;
+  border:         0.5px solid #dcdcdc;
+  padding:        2px 20px;
+  display:        block;
+  margin:         20px;
+  font-family:    'Monaco';
+}
+
+.ruby-comments  {
+  font-style: italic;
+  color: #127570;
+  font-size: 18px;
+}
+
+
+.highlight  {
+  margin: 25px 0px;
+  color: #0A5;
+  background: #F5F5F5;
+  border-radius: 5px;
+  border: 0.5px solid #dcdcdc;
+  padding: 5px 5px;
+  text-align: center;
+}
